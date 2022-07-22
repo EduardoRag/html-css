@@ -13,6 +13,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,7 +30,24 @@
         }
 
         thead, tfoot {
+            background-color: aqua;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
             background-color: aquamarine;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: aquamarine;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: aqua;
         }
     </style>
 </head>
@@ -38,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            <CAPTION> É uma legenda para a tabela sempre fica no topo da tabela
             <THEAD>
                 POSSO TER: TR, TD, TH
             <TBODY>
@@ -47,11 +66,12 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
 
             </tr>
         </thead>
@@ -221,7 +241,7 @@
         <tfoot>
             <tr>
                 <td></td>                
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
