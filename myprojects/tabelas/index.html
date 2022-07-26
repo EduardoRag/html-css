@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My table project</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: red;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        col.coluna {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table project</h1>
+    <table>
+        <colgroup>
+            <col class="coluna" span="2">
+        </colgroup>
+        <caption>
+            Challenge
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">p</th>
+                <th scope="col">q</th>
+                <th scope="col">~p</th>
+                <th scope="col">p V p</th>
+                <th scope="col">p ^ q</th>
+                <th scope="col">p → q</th>
+                <th scope="col">p ↔ q</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><strong>V</strong></td>
+                <td><strong>V</strong></td>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            
+            <tr>
+                <td><strong>V</strong></td>
+                <td><strong>F</strong></td>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <td><strong>F</strong></td>
+                <td><strong>V</strong></td>
+                <td>V</td>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+
+            <tr>
+                <td><strong>F</strong></td>
+                <td><strong>F</strong></td>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
