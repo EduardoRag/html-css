@@ -10,23 +10,25 @@
 <body>
     <main>
         <section id="left">
-
+            <h1>Faça seu login para continuar.</h1>
+            <img src="style/journey-animate.svg" class="left-image" alt="Gif">
         </section>
         <aside id="right">
             <div id="login-box">
-                <h1>LOGIN</h1>
-                <div id="little-login-box">
-                    <form action="login.html" method="post" autocomplete="on" id="login-input">
-                        <div class="input-username">
-                            <label for="iusername">Username: </label><br>
-                            <input type="text" name="username" id="iusername" placeholder="Username" minlength="5" maxlength="20" required autocomplete="username">
-                        </div>
-                        <div class="input-password">
-                            <label for="ipassword">Password: </label><br>
-                            <input type="password" name="passowrd" id="ipassword" placeholder="Password" minlength="5" maxlength="20" required autocomplete="current-password">
-                        </div>
-                    </form>
-                </div>
+                <h1>LOGIN</h1>                
+                <form action="login.html" method="post" autocomplete="on" id="login-input">
+                    <div class="input-username">
+                        <label for="iusername">Username: </label><br>
+                        <input type="text" name="username" id="iusername" placeholder="Username" minlength="5" maxlength="20" required autocomplete="username">
+                    </div>
+                    <div class="input-password">
+                        <label for="ipassword">Password: </label><br>
+                        <input type="password" name="passowrd" id="ipassword" placeholder="Password" minlength="5" maxlength="20" required autocomplete="current-password">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Login">
+                    </div>                 
+                </form>                
             </div>
         </aside>
     </main>
