@@ -41,12 +41,12 @@ section#left {
 }
 
 img.left-image {
-    position: relative;
-    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
     
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 aside#right {
@@ -70,6 +70,7 @@ div#login-box {
     flex-direction: column;
     padding: 30px 35px;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.726);
 }
 
 form#login-input {
@@ -104,6 +105,5 @@ h1 {
     font-size: 2vw;
     text-align: center;
     color: white;
-    font-weight: bolder;
-    top: 10%;
+    font-weight: bolder;    
 }
